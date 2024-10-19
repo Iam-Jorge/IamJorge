@@ -45,6 +45,7 @@ header h1 {
 }
 
 section {
+    margin: 1% 1% 1% 1%;
     background: #F5F5DC; /* Beige claro */
     color: #333333;
     margin-bottom: 1rem;
@@ -218,8 +219,7 @@ section p {
     margin-bottom: 2rem;
     padding: 15px;
     border-radius: 5px;
-    background: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #F5F5DC;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -392,7 +392,6 @@ section p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
-    padding-right: 40px;
 }
 
 /* Book section styles */
@@ -415,7 +414,7 @@ section p {
     text-align: center;
     font-size: 1.2rem;
     font-weight: normal;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     animation: wave 5s infinite ease-in-out;
 }
 
@@ -477,8 +476,9 @@ section p {
 
 /* Portafolio styles */
 #portafolio {
-    padding: 10px 0;
-    background-color: #f9f9f9;
+    background-color: #F5F5DC;
+    min-height: 100vh;
+    margin-bottom: 100px;
 }
 
 .portfolio-grid {
@@ -626,7 +626,7 @@ nav {
         gap: 15px;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 60px;
+        top: 100%;
         right: 0;
         width: 100%;
         text-align: center;
@@ -640,9 +640,10 @@ nav {
         display: block;
         margin: 10px 0;
     }
-
-    #typewriter {
-        font-size: 1.3em;
+    
+    footer {
+        position: static;
+        padding: 15px 0;
     }
 }
 
